@@ -1,1 +1,3 @@
 First changes
+Hellp
+check gitignore
