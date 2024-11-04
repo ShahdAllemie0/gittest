@@ -1,1 +1,2 @@
 First changes
+check reset command 
