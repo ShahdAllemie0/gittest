@@ -7,15 +7,15 @@ permissions:
   contents: write
   repository-projects: write
 jobs:
-    display_files:
-      name: job for cat file
-      runs-on: ubuntu-latest
-      steps:
-        - name: checkout repository
-          uses: actions/checkout@v2
-        - name: display content
-          run: | 
-             cat file.txt
-          shell: bash   
+  display_files:
+    name: job for cat file
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+      - name: display content
+        run: | 
+          cat file.txt
+        shell: bash   
       
       
