@@ -1,0 +1,1 @@
+Test action when i opene MR from master branch

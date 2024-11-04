@@ -1,0 +1,16 @@
+name: Opened pull requests
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+jobs:
+  check-pull-requests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: notify pull request creation
+        run: |
+          echo "Hello you now opened a new MR"

@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  job1: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: job 1
+        run: echo "JOB ! number one"
+  job2: 
+    runs-on: ubuntu-latest
+    needs: job1
+    steps:
+      - name: job 2
+        run: echo "JOB ! number one"
